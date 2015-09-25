@@ -2,19 +2,77 @@
 <html>
 <head>
 	<title>Simple Trello Project</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
+<hr>
 <center>
-	<h1>Simple Trello</h1>
+	<h1 id="heading">Simple Trello</h1>
 </center>
-<div id="to-do-box">
-	
+<hr>
+<div id="note">
+	<h2 id="note-text">Note:</h2>
+	<ol>
+	    <li>Add an item in the to-do list input box and hit enter</li>
+	    <li>If your mind is all set to work on that item..drag that card to the doing box in the right.</li>
+	    <li>If you completed the work..drag that card from doing to done..</li>
+	    <li>You can drag the cards from whatever the box you want to....for eg: <mark>to-do to doing</mark> or <mark>to-do to done</mark> and so on....</li>
+	</ol>
 </div>
-<div id="doing-box">
-	
-</div>
-<div id="done-box">
-	
-</div>
+<div id="container">
+<div id="to-do-main">
+	<div id="to-do-box">
+		<center>
+			<h2>To-Do</h2>
+		</center>
+	</div>
+	<div id="to-do-footer">
+		<center>
+			<input type="text" name="task" value="" placeholder="Add a task">
+		</center>
+		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			
+		</div>
+		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			
+		</div>
+	</div>
+</div> <!-- End of To-do Box -->
+
+<div id="doing-box-main">
+	<div id="doing-box">
+		<center>
+			<h2>Doing</h2>
+		</center>
+	</div>
+	<div id="doing-box-footer">
+		<div class="doing-content" style="background-color:yellow;margin-top:5px;margin-bottom:5px;"> 
+			
+		</div>
+		<div class="doing-content" style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			
+		</div>
+	</div>
+</div> <!-- End of Doing Box -->
+
+<div id="done-box-main">
+	<div id="done-box">
+		<center>
+			<h2>Done</h2>
+		</center>
+	</div>
+	<div id="done-box-footer">
+		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			
+		</div>
+		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			
+		</div>
+	</div>
+</div> <!-- End of Done box -->
+
+</div> <!-- End of Container -->
+<script src="index.js" type="text/javascript"></script>
+
 </body>
 </html>

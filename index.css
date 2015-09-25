@@ -1,0 +1,71 @@
+#container{
+	margin:auto;
+}
+#note{
+	border: 1px solid grey;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#note-text{
+	margin-left: 5px;
+	color: blue;
+}
+#heading{
+	color: lightslategrey;
+}
+#to-do-main{
+	float: left;
+	margin-left: 60px;
+}
+#to-do-box{
+	width: 340px;
+	height: 60px;
+	background-color: lightgoldenrodyellow;
+	border: 1px solid grey;
+}
+#to-do-footer{
+	width: 340px;
+	height: 100%;
+	background-color: lightgrey;
+	border: 1px solid grey; 
+}
+input{
+	width: 338px;
+	height: 30px;
+	font-weight: bold;
+	font-size: 20px;
+	color: blue;
+	text-align: center;
+}
+#doing-box-main{
+	float: left;
+	margin-left: 60px;
+}
+#doing-box{
+	width: 340px;
+	height: 60px;
+	background-color: bisque;
+	border: 1px solid grey;
+}
+#doing-box-footer{
+	width: 340px;
+	height: 100%;
+	background-color: lightgrey;
+	border: 1px solid grey;
+}
+#done-box-main{
+	float: left;
+	margin-left: 60px;
+}
+#done-box{
+	width: 340px;
+	height: 60px;
+	background-color: #D5FFD5;
+	border: 1px solid grey;
+}
+#done-box-footer{
+	width: 340px;
+	height: 100%;
+	background-color: lightgrey;
+	border: 1px solid grey; 
+}
