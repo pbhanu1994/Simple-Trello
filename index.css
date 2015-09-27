@@ -2,9 +2,19 @@
 	margin:auto;
 }
 #note{
-	border: 1px solid grey;
+	border: 5px dotted grey;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+#close{
+	float: right;
+	font-weight: bold;
+	font-size: 20px;
+	color:red;
+	text-decoration: none;
+	cursor:pointer;
+	padding: 5px;
+	border: 1px solid lightgrey;
 }
 #note-text{
 	margin-left: 5px;

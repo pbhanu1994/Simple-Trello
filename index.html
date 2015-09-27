@@ -3,6 +3,8 @@
 <head>
 	<title>Simple Trello Project</title>
 	<link rel="stylesheet" type="text/css" href="index.css">
+
+
 </head>
 <body>
 <hr>
@@ -10,13 +12,15 @@
 	<h1 id="heading">Simple Trello</h1>
 </center>
 <hr>
+
 <div id="note">
+	<span onclick="close_x()" id="close">Close</span>
 	<h2 id="note-text">Note:</h2>
 	<ol>
 	    <li>Add an item in the to-do list input box and hit enter</li>
 	    <li>If your mind is all set to work on that item..drag that card to the doing box in the right.</li>
 	    <li>If you completed the work..drag that card from doing to done..</li>
-	    <li>You can <mark>drag the cards</mark> from whatever the box you want to....for eg: <mark>to-do to doing</mark> or <mark>to-do to done</mark> and <mark>so on....</mark></li>
+	    <li>You can <mark>place the cards</mark> anywhere you want ....for eg: <mark>to-do to doing</mark> or <mark>to-do to done</mark> and <mark>so on....</mark></li>
 	</ol>
 </div>
 <div id="container">
@@ -28,13 +32,18 @@
 	</div>
 	<div id="to-do-footer">
 		<center>
-			<input type="text" name="task" value="" placeholder="Add a task">
+			<input type="text" id="addtask" name="task" value="" placeholder="Add a task">
 		</center>
 		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		</div>
 		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	
+		</div>
+		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		</div>
 	</div>
 </div> <!-- End of To-do Box -->
@@ -72,7 +81,15 @@
 </div> <!-- End of Done box -->
 
 </div> <!-- End of Container -->
-<script src="index.js" type="text/javascript"></script>
 
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
+<script src="index.js" type="text/javascript"></script>
+<script type="text/javascript">
+alert("Hello");
+
+
+</script>
 </body>
 </html>
