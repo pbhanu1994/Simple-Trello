@@ -8,7 +8,7 @@
 
 }
 #note{
-	border: 5px dotted grey;
+	border: 5px dotted lightslategrey;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -101,8 +101,8 @@ input{
 }
 #copyrights{
 	clear: both;
-	
-	margin-top: 100%;
+	padding-top: 200px;
+	/*margin-top: 20px;*/
 	padding-bottom: 0px;
 	margin-bottom: 0px;
 }

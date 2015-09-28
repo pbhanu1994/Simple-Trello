@@ -9,7 +9,7 @@
 <body>
 <hr>
 <center>
-	<h1 id="heading">Simple Trello</h1>
+	<h1 id="heading">Simple Trello v1.0</h1>
 </center>
 <hr>
 <center>
@@ -17,13 +17,21 @@
 </center>
 <div id="note">
 	<span onclick="close_x()" id="close">Close</span>
-	<h2 id="note-text">Note:</h2>
+	<h2 id="note-text">How To:</h2>
 	<ol>
 	    <li>Add an item in the to-do list input box and hit enter</li>
 	    <li>If your mind is all set to work on that item..drag that card to the doing box in the right.</li>
 	    <li>If you completed the work..drag that card from doing to done..</li>
 	    <li>You can <mark>place the cards</mark> anywhere you want ....for eg: <mark>to-do to doing</mark> or <mark>to-do to done</mark> and <mark>so on....</mark></li>
 	</ol>
+	<hr>
+	<h2 id="note-text">Note:</h2>
+	<ol>
+	    <li><strong>Do not refresh the page</strong>..(if you do, you'll lose the data..this is just a Javascript project..in order to store the data in your browser..we need to use localStorage..i'm working on that..will release in the next version (v2.0). :)</li>
+	    <li>Graphics, Colors will be taken care of in v2.0.</li>
+	    <center><a href="javascript:void();" onclick="close_x()" id="" style="color:red;text-decoration:none;font-size:18px;"><strong>Close</strong></a></center>
+	</ol>
+
 </div>
 <div id="container">
 <div id="to-do-main">
@@ -36,13 +44,13 @@
 		<center>
 			<input type="text" id="addtask" name="task" value=""  placeholder="Add a task">
 		</center>
-		<div id="items" ondragover="allowdrag(ev);" ondrop="drop(ev);">
-			<div id="item" draggable="true" ondragstart="drag(ev);" style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			<span id="close1" onclick="close_1()">x</span>
-			<center><span>Thanks for using it :)</span></center>
+		<div id="items" ondragover="allowdrag(event);" ondrop="drop(event);">
+			<div id="item" draggable="true" ondragstart="drag(ev);" style="background-color:yellow;margin-top:5px;margin-bottom:5px;box-shadow:2px 2px 2px #888888;">
+			<span id="close1" title="Delete" onclick="close_1()">x</span>
+			<center><span style="font-size:28px;">Thanks for using it :)</span></center>
 			</div>
 		</div>
-		
+		<!-- <img draggable="true" src="image1.jpg" alt="Bhanu" id="drags"  ondragstart="drag(event)"> -->
 		
 	</div>
 </div> <!-- End of To-do Box -->
@@ -53,13 +61,8 @@
 			<h2>Doing</h2>
 		</center>
 	</div>
-	<div id="doing-box-footer"  ondragover="allowdrag(ev);" ondrop="drop(ev);">
-		<div class="doing-content" style="background-color:yellow;margin-top:5px;margin-bottom:5px;"> 
-			
-		</div>
-		<div class="doing-content" style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			
-		</div>
+	<div id="doing-box-footer"  ondragover="allowdrag(event);" ondrop="drop(event);">
+		
 	</div>
 </div> <!-- End of Doing Box -->
 
@@ -69,13 +72,8 @@
 			<h2>Done</h2>
 		</center>
 	</div>
-	<div id="done-box-footer" ondragover="allowdrag(ev)" ondrop="drop(ev)">
-		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			
-		</div>
-		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			
-		</div>
+	<div id="done-box-footer" ondragover="allowdrag(event)" ondrop="drop(event)">
+		
 	</div>
 </div> <!-- End of Done box -->
 
@@ -85,10 +83,11 @@
 <div id="copyrights">
 <hr>
 	<center>
-		<p>Copyright &copy; BHANU PRAKASH</p>
+		<p style="color:lightslategrey;">Copyright &copy; BHANU PRAKASH</p>
 	</center>
 </div>
 </footer>
+
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="index.js" type="text/javascript"></script>
 </body>
