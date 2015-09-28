@@ -12,7 +12,9 @@
 	<h1 id="heading">Simple Trello</h1>
 </center>
 <hr>
-
+<center>
+	<p id="namehere"></p>
+</center>
 <div id="note">
 	<span onclick="close_x()" id="close">Close</span>
 	<h2 id="note-text">Note:</h2>
@@ -32,19 +34,16 @@
 	</div>
 	<div id="to-do-footer">
 		<center>
-			<input type="text" id="addtask" name="task" value="" placeholder="Add a task">
+			<input type="text" id="addtask" name="task" value=""  placeholder="Add a task">
 		</center>
-		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		<div id="items" ondragover="allowdrag(ev);" ondrop="drop(ev);">
+			<div id="item" draggable="true" ondragstart="drag(ev);" style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
+			<span id="close1" onclick="close_1()">x</span>
+			<center><span>Thanks for using it :)</span></center>
+			</div>
 		</div>
-		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,	
-		</div>
-		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		</div>
+		
+		
 	</div>
 </div> <!-- End of To-do Box -->
 
@@ -54,7 +53,7 @@
 			<h2>Doing</h2>
 		</center>
 	</div>
-	<div id="doing-box-footer">
+	<div id="doing-box-footer"  ondragover="allowdrag(ev);" ondrop="drop(ev);">
 		<div class="doing-content" style="background-color:yellow;margin-top:5px;margin-bottom:5px;"> 
 			
 		</div>
@@ -70,7 +69,7 @@
 			<h2>Done</h2>
 		</center>
 	</div>
-	<div id="done-box-footer">
+	<div id="done-box-footer" ondragover="allowdrag(ev)" ondrop="drop(ev)">
 		<div style="background-color:yellow;margin-top:5px;margin-bottom:5px;">
 			
 		</div>
@@ -81,15 +80,16 @@
 </div> <!-- End of Done box -->
 
 </div> <!-- End of Container -->
+<footer>
 
-
-
+<div id="copyrights">
+<hr>
+	<center>
+		<p>Copyright &copy; BHANU PRAKASH</p>
+	</center>
+</div>
+</footer>
 <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.4.js"></script>
 <script src="index.js" type="text/javascript"></script>
-<script type="text/javascript">
-alert("Hello");
-
-
-</script>
 </body>
 </html>

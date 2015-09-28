@@ -1,6 +1,12 @@
 #container{
 	margin:auto;
 }
+#namehere{
+	font-size: 24px;
+	color: blue;
+	font-weight: bold;
+
+}
 #note{
 	border: 5px dotted grey;
 	margin-top: 10px;
@@ -15,6 +21,15 @@
 	cursor:pointer;
 	padding: 5px;
 	border: 1px solid lightgrey;
+}
+#close1{
+	float:right;
+	font-weight: bold;
+	font-size: 14px;
+	color:navy;
+	cursor: pointer;
+	text-decoration: none;
+	border: 1px solid navy
 }
 #note-text{
 	margin-left: 5px;
@@ -47,6 +62,11 @@ input{
 	color: blue;
 	text-align: center;
 }
+#item{
+	background-color:yellow;
+	margin-top:5px;
+	margin-bottom:5px;
+}
 #doing-box-main{
 	float: left;
 	margin-left: 60px;
@@ -78,4 +98,11 @@ input{
 	height: 100%;
 	background-color: lightgrey;
 	border: 1px solid grey; 
+}
+#copyrights{
+	clear: both;
+	
+	margin-top: 100%;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
 }
