@@ -7,3 +7,5 @@ Simple-Trello [JavaScript Project]
 	<li>If you completed the work..drag that card from doing to done..</li>
 	<li>You can drag the cards from whatever the box you want to....for eg: <mark>to-do to doing</mark> or <mark>to-do to done</mark> and so on....</li>
 </ol>
+
+<img src="http://bhanuprakash.net/myblog/wp-content/uploads/2015/09/simple-trello-project.gif" alt="" width="600" height="311" class="alignnone size-full wp-image-609" />
